@@ -1,0 +1,72 @@
+<view class="container">
+	<!-- 头部信息 注册的公共组件 -->
+	<MyHeader></MyHeader>
+	<!-- 视频信息 -->
+	<view bindtap="video" class="video" >
+		<video src="{{videoDis.videoSrc}}"></video>
+	</view>
+	<!-- 视频标题 -->
+	<view class="video_title">
+		<!-- 标题信息 -->
+		<text class="video_tit">{{videoDis.videoTitle}}</text>
+		<!-- 小三角 -->
+		<text class="border"> </text>
+	</view>
+	<!-- 视频作者 -->
+	<view class="video_deata">
+		<!-- 作者 -->
+		<text class="author">{{videoDis.author}}</text>
+		<!-- 播放量 -->
+		<text class="playCount">{{videoDis.playCount == undefined?'': videoDis.playCount + '次播放'}}</text>
+		<!-- 评论量 -->
+		<text class="commentCount">{{videoDis.commentCount == undefined?'': videoDis.commentCount + '弹幕'}}</text>
+		<!-- 时间 -->
+		<text class="date">{{videoDis.date}}</text>
+	</view>
+	<!-- 推荐视频 -->
+	<view class="other_list">
+		<navigator wx:for="{{othersList}}" wx:key="{{index}}">
+			<!-- 图片 -->
+			<view class="other_img">
+				<image mode="widthFix" src="{{item.imgSrc}}" class="o_img"></image>
+				<text class="other_duration">{{item.duration}}</text>
+			</view>
+			<!-- 视频详情 -->
+		<view class="other_info">
+			<view class="other_til">
+				<!-- 标题 -->
+				<view class="other_title">{{item.title}}</view>
+			</view>
+			<!-- 播放量 -->
+			<view class="other_mess">
+				<text class="play_count">{{item.playMsg}}万次观看</text>
+				<text class="play_comment">{{item.commentCount}}弹幕</text>
+			</view>
+		</view>
+		</navigator>
+	</view>
+	<!-- 评论区 -->
+	<view class="comment_warp">
+		<view class="comment_title">
+			<text>评论 </text>( {{commentsList.commentTotalCount}} )
+		</view>
+		<view class="comment_list">
+			<view class="comment_item" wx:for="{{commentsList.commentList}}" wx:key="{{index}}">
+			<!-- 左侧 -->
+			<view class="comment_user">
+				<image src="{{item.userIconSrc}}"></image>
+			</view>
+			<!-- 右侧 -->
+			<view class="comment_info">
+				<view class="comment_deta">
+					<text class="comment_author">{{item.username}}</text>
+					<text class="comment_date">{{item.commentDate}}</text>	
+				</view>
+				<view class="comment_content">
+					{{item.commentInfo}}
+				</view>
+			</view>
+			</view>
+		</view>
+	</view>
+</view>

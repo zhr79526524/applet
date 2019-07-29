@@ -1,0 +1,114 @@
+page{
+	color: #666;
+}
+.video{}
+video{
+	width: 100%;
+}
+.video_title{
+	padding: 8rpx;
+}
+.video_tit{
+	font-size: 30rpx;
+	font-weight: 700;
+}
+.border{
+	margin-left: 10rpx;
+	display: inline-block;
+	border-width: 10rpx;
+	border-style: solid;
+	border-color: #ccc transparent transparent transparent;
+}
+.video_deata{
+	font-size: 28rpx;
+	margin-top: 10rpx;
+}
+.video_deata text{
+	margin-left: 25rpx;
+}
+.author{
+	font-weight: 500;
+	color: #000;
+}
+.other_list{
+	margin-top: 15rpx;
+	padding: 0 3%;
+}
+navigator{
+	display: flex;
+	justify-content: space-between;	
+	margin-bottom: 15rpx;
+}
+.other_img{
+	position: relative;
+	width: 50%;
+}
+.o_img{
+	width: 100%;
+	border-radius: 25rpx;
+}
+.other_duration{
+	position: absolute;
+	left: 60%;
+	top: 75%;
+	color: white;
+	font-size: 28rpx;
+}
+.other_info{
+	width: 50%;
+	padding: 0 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.other_til{
+	font-size: 28rpx;
+	color: #e06f93;
+	margin-top: 2rpx;
+}
+.other_mess{
+	font-size: 26rpx;
+}
+/* 评论区 */
+.comment_warp{
+	padding: 0 3%;
+}
+.comment_title{
+	font-size: 32rpx;
+	color: #666;
+}
+.comment_title text{
+	font-size: 34rpx;
+	font-weight: 500;
+}
+.comment_item{
+	display: flex;
+	justify-content: space-between;
+	margin: 20rpx 0;
+	border-bottom: solid 1px #ccc;
+}
+.comment_user{
+	width: 15%;
+}
+.comment_user image{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 5rpx;
+}
+.comment_info{
+	width: 85%;
+	margin-left: 10rpx;
+}
+.comment_deta{
+	display: flex;
+	justify-content: space-between;
+	font-size: 28rpx;
+	color: #ccc;
+	margin-top: 10rpx;
+}
+.comment_content{
+	font-size: 30rpx;
+	margin: 25rpx 0;
+}

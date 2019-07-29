@@ -1,0 +1,49 @@
+<!--logs.wxml-->
+<view class="container">
+	<view class="from">
+		<form bindsubmit="formSubmit">
+			<!-- 表单 -->
+			<view class="form_acito">
+				<view class="form_user">
+					<text>账号</text>
+					<input type="text"  placeholder="请输入您的账户" />
+				</view>
+				<view class="form_pass">
+					<text>密码</text>
+					<input type="password" placeholder="请输入您的密码" />
+				</view>
+			</view>
+			<!-- 忘记密码 -->
+			<navigator>
+				<text class="forget">忘记密码</text>
+			</navigator>
+			<!-- 按钮点击 -->
+			<navigator class="click">
+				<button class="regiter">注册</button>
+				<button class="login style">登陆</button>
+			</navigator>
+		</form>
+		<!-- 用户手册 -->
+		<view class="user_manual">
+			登录即代表你同意<navigator><text>用户协议</text></navigator>和<navigator><text>隐私策略</text></navigator>
+		</view>
+	</view>
+	<!-- 尾巴 -->
+	<view class="footer">
+		<view class="footer_son">
+			<view class="borer_left"></view>
+			<view class="borer_text">其他登陆方式</view>
+			<view class="borer_right"></view>	
+		</view>
+		<view class="href">
+			<view class="href_left">
+				<image mode="widthFix" src="../../icons/qq.png">\n</image>
+				<text>QQ</text>
+			</view>
+			<view class="href_right">
+				<image mode="widthFix" src="../../icons/wb.png"></image>
+				<text>微博</text>
+			</view>
+		</view>
+	</view>
+</view>

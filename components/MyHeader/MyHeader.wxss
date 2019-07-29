@@ -1,0 +1,53 @@
+.my_header{
+	display: flex;
+	align-items: center;
+	padding: 8rpx;
+	background-color: white;
+}
+.logo_img{
+	width: 160rpx;
+	height: 80rpx;
+}
+.search{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-left: 5rpx;
+}
+.search_img{
+	position: absolute;
+	left: 11rpx;
+	top: 13rpx;
+	width: 30rpx;
+	height: 30rpx;
+}
+.search_input{
+	border-radius: 25rpx;
+	padding-left: 55rpx;
+	background: #f4f4f4;
+	outline: none;
+	font-size: 26rpx;
+	height: 55rpx;
+}
+.user{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.user_img{
+	width: 80rpx;
+	height: 68rpx;
+}
+.down{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fb7299;
+	color: white;
+	width: 180rpx;
+	text-align: center;
+	font-size: 26rpx;
+	height: 50rpx;
+	border-radius: 25rpx;
+}
